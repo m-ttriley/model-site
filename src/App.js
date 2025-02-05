@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+
 import albumArt from './images/albumArt.jpg'
 import logo from './images/mdl-actriz-transparent.png';
 import bandcamp from './images/bandcamp-brands-solid.svg';
@@ -80,8 +83,14 @@ function App() {
           <div class="section-container">
             <div class="content-block">
               <div class="content-container">
-              <h1>contact</h1>
-              <div className="contact-wrapper">
+              
+              <Popup trigger={
+                  <div className='site-link contact'>
+                    contact
+                  </div>
+              } modal={true} position="center center">
+              {close => <div className="contact-wrapper">
+              <button className="close" onClick={close}>&times;</button>
                 <div className="contact-row">
                   <div className="contact-label">
                     <span>management</span>
@@ -133,7 +142,8 @@ function App() {
                     <a href="mailto:jennifer@hipgnosissongs.com" rel="noreferrer" target="_blank">jennifer@hipgnosissongs.com</a>
                   </div>
                 </div>
-              </div>
+              </div>}
+              </Popup>
               </div>
             </div>
           </div>
