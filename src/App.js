@@ -48,6 +48,7 @@ function App() {
               <div style={{ 'position': 'relative', 'boxSizing': 'border-box' }}>
               <div className="dropdown-container" 
                 onMouseEnter={handleMouseEnter} 
+                onClick={isStoreHoverOpen ? handleMouseLeave : handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <div className="site-link">
                   <span>stores</span>
