@@ -268,18 +268,18 @@
 }
 
 @media (max-width: 768px) {
-  .fade-in-two {
+  /* .fade-in-two {
     animation: none;
-  }
+  } */
 
   .content-block {
     padding: 0;
   }
 
   .under-layer {
-    height: 100px;
-    width: 100px;
-    opacity: 0;
+    height: 400px;
+    width: 400px;
+    /* opacity: 0; */
   }
 
   .site-link {
