@@ -277,9 +277,9 @@
   }
 
   .under-layer {
-    height: 400px;
-    width: 400px;
-    /* opacity: 0; */
+    height: 300px;
+    width: 300px;
+    opacity: 60%;
   }
 
   .site-link {
