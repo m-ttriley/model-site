@@ -13,6 +13,7 @@ import tiktok from './images/tiktok-brands-solid.svg';
 import twitter from './images/x-twitter-brands-solid.svg';
 import youtube from './images/youtube-brands-solid.svg';
 import './App.css';
+import ContactRow from './ContactRow';
 
 function App() {
   const [isStoreHoverVisible, setIsStoreHoverVisible] = useState(false);
@@ -88,60 +89,19 @@ function App() {
                   <div className='site-link contact'>
                     contact
                   </div>
-              } modal={true} position="center center">
-              {close => <div className="contact-wrapper">
+              } 
+              modal={true} 
+              position="center center"
+              contentStyle={{backgroundColor: isInverted ? 'black' : 'white', color: isInverted ? 'white' : 'black'}}
+              >
+              {close => <div className='contact-wrapper'>
               <button className="close" onClick={close}>&times;</button>
-                <div className="contact-row">
-                  <div className="contact-label">
-                    <span>management</span>
-                  </div>
-                  <div className="contact-info">
-                    <a href="mailto:mgmt@modelactriz.com?" rel="noreferrer" target="_blank">mgmt@modelactriz.com</a>
-                  </div>
-                </div>
-                <div className="contact-row">
-                  <div className="contact-label">
-                    <span>world (ex-europe) booking</span>
-                  </div>
-                  <div className="contact-info">
-                    <a href="mailto:sam@highroadtouring.com" rel="noreferrer" target="_blank">sam@highroadtouring.com</a>
-                  </div>
-                </div>
-                <div className="contact-row">
-                  <div className="contact-label">
-                    <span>europe booking</span>
-                  </div>
-                  <div className="contact-info">
-                    <a href="mailto:roxane@atc-live.com" rel="noreferrer" target="_blank">roxane@atc-live.com</a>
-                  </div>
-                </div>
-                <div className="contact-row">
-                  <div className="contact-label">
-                    <span>us pr</span>
-                  </div>
-                  <div className="contact-info">
-                    <a href="mailto:carrie@tcbpr.com" rel="noreferrer" target="_blank">carrie@tcbpr.com</a>
-                    <a href="mailto:alison@tcbpr.com" rel="noreferrer" target="_blank">alison@tcbpr.com</a>
-                    <a href="mailto:claire@tcbpr.com" rel="noreferrer" target="_blank">claire@tcbpr.com</a>
-                  </div>
-                </div>
-                <div className="contact-row">
-                  <div className="contact-label">
-                    <span>uk pr</span>
-                  </div>
-                  <div className="contact-info">
-                    <a href="mailto:neeliya.desilva@goodmachinepr.com" rel="noreferrer" target="_blank">neeliya.desilva@goodmachinepr.com</a>
-                    <a href="mailto:chris.cuff@goodmachinepr.com" rel="noreferrer" target="_blank">chris.cuff@goodmachinepr.com</a>
-                  </div>
-                </div>
-                <div className="contact-row">
-                  <div className="contact-label">
-                    <span>licensing</span>
-                  </div>
-                  <div className="contact-info">
-                    <a href="mailto:jennifer@hipgnosissongs.com" rel="noreferrer" target="_blank">jennifer@hipgnosissongs.com</a>
-                  </div>
-                </div>
+              <ContactRow label="management" emails={["mgmt@modelactriz.com"]} isInverted={isInverted} />
+              <ContactRow label="world (ex-europe) booking" emails={["sam@highroadtouring.com"]} isInverted={isInverted} />
+              <ContactRow label="europe booking" emails={["roxane@atc-live.com"]} isInverted={isInverted} />
+              <ContactRow label="us pr" emails={["carrie@tcbpr.com", "alison@tcbpr.com", "claire@tcbpr.com"]} isInverted={isInverted} />
+              <ContactRow label="uk pr" emails={["neeliya.desilva@goodmachinepr.com", "chris.cuff@goodmachinepr.com"]} isInverted={isInverted} />
+              <ContactRow label="licensing" emails={["jennifer@hipgnosissongs.com"]} isInverted={isInverted} />
               </div>}
               </Popup>
               </div>

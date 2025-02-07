@@ -241,6 +241,12 @@
   padding: 10px;
 }
 
+.contact-inverted {
+  background-color: black;
+  color: white;
+}
+
+
 .close {
   position: absolute;
     top: 10px;
