@@ -40,10 +40,12 @@
 .over-layer {
   z-index: 2;
   position: relative;
+  transition: all 0.5s ease-in-out;
 }
 
 .under-layer {
   height: 500px;
+  transition: all 0.5s ease-in-out;
   width: 500px;
   transform: translateX(-50%);
   left: 50%;
@@ -69,6 +71,7 @@
   align-items: center;
   text-align: center;
   padding-bottom: 30px;
+  transition: all 0.5s ease-in-out;
 }
 
 .main-logo {
