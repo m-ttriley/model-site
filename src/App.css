@@ -38,14 +38,14 @@
 }
 
 .under-layer {
-  height: 800px;
-  width: 800px;
+  height: 500px;
+  width: 500px;
   transform: translateX(-50%);
   left: 50%;
   top: 250px;
   background-size: cover;
   z-index: 1;
-  position: absolute;
+  position: fixed;
   border: 5px solid white;
 }
 
