@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-
 import albumArt from './images/albumArt.jpg'
 import logo from './images/mdl-actriz-transparent.png';
 import bandcamp from './images/bandcamp-brands-solid.svg';
@@ -35,15 +34,15 @@ function App() {
   };
 
   return (
-    <div className={`App fade-in-one ${isInverted ? 'inverted' : ''}`}>
+    <div className={`App fade-in-one ${isInverted ? 'invert-background' : ''}`}>
       <div className="body">
-        <div className="logo-container" onClick={() => setIsInverted(!isInverted)}>
+        <div className={`logo-container ${isInverted ? 'inverted' : ''}`} onClick={() => setIsInverted(!isInverted)}>
           <img src={logo} alt="Model Actriz" className={`main-logo ${isInverted ? 'inverted-logo' : ''}`} />
         </div>
-        <div className="under-layer fade-in-two">
+        <div className={`under-layer fade-in-two ${isInverted ? 'inverted' : ''}`}>
           <div className="background" style={{ backgroundImage: `url(${albumArt})` }} />
         </div>
-        <div className="over-layer">
+        <div className={`over-layer ${isInverted ? 'inverted' : ''}`}>
           <div className="link-section-container">
             <div className="site-link" ><a href='https://found.ee/ma-newsletter' rel="noreferrer" target="_blank">newsletter</a></div>
             <div style={{ 'position': 'relative', 'boxSizing': 'border-box' }}>
