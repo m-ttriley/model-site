@@ -55,6 +55,12 @@
   position: fixed;
 }
 
+.bg-toggle {
+  position: absolute;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
 .background {
   margin: auto;
   height: 100%;
@@ -67,7 +73,23 @@
   ),
   url('./images/albumArt.jpg');
   background-size: cover;
-  opacity: 30%;
+  opacity: 50%;
+  background-position: center;
+}
+
+.background-two {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background: 
+  radial-gradient(
+    circle closest-side, 
+    rgba(255, 255, 255, 0) 10%, 
+    rgba(255, 255, 255, 1) 99%
+  ),
+  url('./images/background.jpg');
+  background-size: cover;
+  opacity: 50%;
   background-position: center;
 }
 

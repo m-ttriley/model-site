@@ -18,6 +18,7 @@ function App() {
   const [isStoreHoverVisible, setIsStoreHoverVisible] = useState(false);
   const [isStoreHoverOpen, setIsStoreHoverOpen] = useState(false);
   const [isInverted, setIsInverted] = useState(false);
+  const [backgroundToggle, setBackgroundToggle] = useState(false);
 
   // Handlers for mouse events
   const handleMouseEnter = () => {
@@ -34,12 +35,13 @@ function App() {
 
   return (
     <div className={`App fade-in-one ${isInverted ? 'invert-background' : ''}`}>
+      <div className='bg-toggle' onClick={() => setBackgroundToggle(!backgroundToggle)}>toggle bg</div>
       <div className="body">
         <div className={`logo-container ${isInverted ? 'inverted' : ''}`} onClick={() => setIsInverted(!isInverted)}>
           <img src={logo} alt="Model Actriz" className={`main-logo ${isInverted ? 'inverted-logo' : ''}`} />
         </div>
         <div className={`under-layer fade-in-two ${isInverted ? 'inverted' : ''}`}>
-          <div className="background" />
+          {!backgroundToggle ? <div className="background" /> : <div className="background-two" />}
         </div>
         <div className={`over-layer ${isInverted ? 'inverted' : ''}`}>
           <div className="link-section-container">
