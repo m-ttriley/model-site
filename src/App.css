@@ -53,13 +53,19 @@
   background-size: cover;
   z-index: 1;
   position: fixed;
-  border: 5px solid white;
 }
 
 .background {
   margin: auto;
   height: 100%;
   width: 100%;
+  background: 
+  radial-gradient(
+    circle closest-side, 
+    rgba(255, 255, 255, 0) 10%, 
+    rgba(255, 255, 255, 1) 99%
+  ),
+  url('./images/albumArt.jpg');
   background-size: cover;
   opacity: 30%;
   background-position: center;

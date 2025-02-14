@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import albumArt from './images/albumArt.jpg'
 import logo from './images/mdl-actriz-transparent.png';
 import bandcamp from './images/bandcamp-brands-solid.svg';
 import bluesky from './images/bluesky-brands-solid.svg';
@@ -40,7 +39,7 @@ function App() {
           <img src={logo} alt="Model Actriz" className={`main-logo ${isInverted ? 'inverted-logo' : ''}`} />
         </div>
         <div className={`under-layer fade-in-two ${isInverted ? 'inverted' : ''}`}>
-          <div className="background" style={{ backgroundImage: `url(${albumArt})` }} />
+          <div className="background" />
         </div>
         <div className={`over-layer ${isInverted ? 'inverted' : ''}`}>
           <div className="link-section-container">
