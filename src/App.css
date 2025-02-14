@@ -6,6 +6,7 @@
   font-family: Arial, sans-serif;
   margin: auto;
   padding: 0 10%;
+  position: relative;
 }
 
 .inverted {
@@ -53,6 +54,8 @@
   background-size: cover;
   z-index: 1;
   position: fixed;
+  mask-image: radial-gradient(closest-side, rgb(255, 255, 255) 60%, transparent 100%);
+  /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%); */
 }
 
 .bg-toggle {
@@ -65,32 +68,22 @@
   margin: auto;
   height: 100%;
   width: 100%;
-  background: 
-  radial-gradient(
-    circle closest-side, 
-    rgba(255, 255, 255, 0) 60%, 
-    rgba(255, 255, 255, 1) 100%
-  ),
-  url('./images/albumArt.jpg');
+  background: url('./images/albumArt.jpg');
   background-size: cover;
   opacity: 50%;
   background-position: center;
 }
 
-.background-two {
-  margin: auto;
-  height: 100%;
+.full-page-bg {
   width: 100%;
-  background: 
-  radial-gradient(
-    circle closest-side, 
-    rgba(255, 255, 255, 0) 60%, 
-    rgba(255, 255, 255, 1) 100%
-  ),
-  url('./images/background.jpg');
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('./images/background.jpg');
   background-size: cover;
-  opacity: 50%;
-  background-position: center;
+  background-position: 50% 50%;
+  opacity: 30%;
 }
 
 .logo-container {

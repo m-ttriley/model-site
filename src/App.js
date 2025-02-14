@@ -35,13 +35,14 @@ function App() {
 
   return (
     <div className={`App fade-in-one ${isInverted ? 'invert-background' : ''}`}>
+      {backgroundToggle && <div className={`full-page-bg ${isInverted ? 'inverted' : ''}`} />}
       <div className='bg-toggle' onClick={() => setBackgroundToggle(!backgroundToggle)}>toggle bg</div>
       <div className="body">
         <div className={`logo-container ${isInverted ? 'inverted' : ''}`} onClick={() => setIsInverted(!isInverted)}>
           <img src={logo} alt="Model Actriz" className={`main-logo ${isInverted ? 'inverted-logo' : ''}`} />
         </div>
         <div className={`under-layer fade-in-two ${isInverted ? 'inverted' : ''}`}>
-          {!backgroundToggle ? <div className="background" /> : <div className="background-two" />}
+          <div className="background" />
         </div>
         <div className={`over-layer ${isInverted ? 'inverted' : ''}`}>
           <div className="link-section-container">
