@@ -68,8 +68,8 @@
   background: 
   radial-gradient(
     circle closest-side, 
-    rgba(255, 255, 255, 0) 10%, 
-    rgba(255, 255, 255, 1) 99%
+    rgba(255, 255, 255, 0) 60%, 
+    rgba(255, 255, 255, 1) 100%
   ),
   url('./images/albumArt.jpg');
   background-size: cover;
@@ -84,8 +84,8 @@
   background: 
   radial-gradient(
     circle closest-side, 
-    rgba(255, 255, 255, 0) 10%, 
-    rgba(255, 255, 255, 1) 99%
+    rgba(255, 255, 255, 0) 60%, 
+    rgba(255, 255, 255, 1) 100%
   ),
   url('./images/background.jpg');
   background-size: cover;
