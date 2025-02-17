@@ -41,9 +41,9 @@ function App() {
         <div className={`logo-container ${isInverted ? 'inverted' : ''}`} onClick={() => setIsInverted(!isInverted)}>
           <img src={logo} alt="Model Actriz" className={`main-logo ${isInverted ? 'inverted-logo' : ''}`} />
         </div>
-        <div className={`under-layer fade-in-two ${isInverted ? 'inverted' : ''}`}>
+        {!backgroundToggle && <div className={`under-layer fade-in-two ${isInverted ? 'inverted' : ''}`}>
           <div className="background" />
-        </div>
+        </div>}
         <div className={`over-layer ${isInverted ? 'inverted' : ''}`}>
           <div className="link-section-container">
             <div className="site-link" ><a href='https://found.ee/ma-newsletter' rel="noreferrer" target="_blank">newsletter</a></div>
