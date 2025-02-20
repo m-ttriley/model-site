@@ -18,7 +18,6 @@ function App() {
   const [isStoreHoverVisible, setIsStoreHoverVisible] = useState(false);
   const [isStoreHoverOpen, setIsStoreHoverOpen] = useState(false);
   const [isInverted, setIsInverted] = useState(false);
-  const [backgroundToggle, setBackgroundToggle] = useState(false);
 
   // Handlers for mouse events
   const handleMouseEnter = () => {
@@ -30,20 +29,21 @@ function App() {
     setIsStoreHoverVisible(false);
     setTimeout(() => {
       setIsStoreHoverOpen(false);
-    }, 500); // delay the dropdown closing by 200ms
+    }, 500);
   };
 
   return (
     <div className={`App fade-in-one ${isInverted ? 'invert-background' : ''}`}>
-      {backgroundToggle && <div className={`full-page-bg ${isInverted ? 'inverted' : ''}`} />}
-      <div className='bg-toggle' onClick={() => setBackgroundToggle(!backgroundToggle)}>toggle bg</div>
+      {/* TODO: Enable background on album announce */}
+      {/* <div className={`full-page-bg ${isInverted ? 'inverted' : ''}`} /> */}
       <div className="body">
         <div className={`logo-container ${isInverted ? 'inverted' : ''}`} onClick={() => setIsInverted(!isInverted)}>
           <img src={logo} alt="Model Actriz" className={`main-logo ${isInverted ? 'inverted-logo' : ''}`} />
         </div>
-        {!backgroundToggle && <div className={`under-layer fade-in-two ${isInverted ? 'inverted' : ''}`}>
+        {/* Small image backdrop - saving for post album rollout */}
+        {/* <div className={`under-layer fade-in-two ${isInverted ? 'inverted' : ''}`}>
           <div className="background" />
-        </div>}
+        </div> */}
         <div className={`over-layer ${isInverted ? 'inverted' : ''}`}>
           <div className="link-section-container">
             <div className="site-link" ><a href='https://found.ee/ma-newsletter' rel="noreferrer" target="_blank">newsletter</a></div>
