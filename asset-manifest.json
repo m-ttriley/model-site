@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/model-site/static/css/main.a71a6a84.css",
+    "main.js": "/model-site/static/js/main.d251a423.js",
+    "static/js/453.aedec871.chunk.js": "/model-site/static/js/453.aedec871.chunk.js",
+    "static/media/albumArt.jpg": "/model-site/static/media/albumArt.4d9a92e7c1a1c85761dd.jpg",
+    "static/media/background.jpg": "/model-site/static/media/background.ebe05912570d0f1de3a3.jpg",
+    "static/media/soundcloud-brands-solid.svg": "/model-site/static/media/soundcloud-brands-solid.affe112b71918185eb28a11c029500c2.svg",
+    "static/media/discord-brands-solid.svg": "/model-site/static/media/discord-brands-solid.b6d08599055a3a319e1f8f25629823af.svg",
+    "static/media/instagram-brands-solid.svg": "/model-site/static/media/instagram-brands-solid.d59520a206ffbc6aadcff97bda2265ff.svg",
+    "index.html": "/model-site/index.html",
+    "static/media/bluesky-brands-solid.svg": "/model-site/static/media/bluesky-brands-solid.bb724a1cc4467649134245f67211debe.svg",
+    "static/media/youtube-brands-solid.svg": "/model-site/static/media/youtube-brands-solid.f9745ea666c539b2b5b90482db2d2afc.svg",
+    "static/media/facebook-brands-solid.svg": "/model-site/static/media/facebook-brands-solid.0bf88536c19bb53965f23c9466464c5a.svg",
+    "static/media/tiktok-brands-solid.svg": "/model-site/static/media/tiktok-brands-solid.441dafdfd7020bd9ea4fc983ed4c6e1f.svg",
+    "static/media/x-twitter-brands-solid.svg": "/model-site/static/media/x-twitter-brands-solid.9354bb618cf36e9a60b233451efcd73b.svg",
+    "static/media/bandcamp-brands-solid.svg": "/model-site/static/media/bandcamp-brands-solid.fac98ce74502d4744cc04fd1968f8c16.svg",
+    "main.a71a6a84.css.map": "/model-site/static/css/main.a71a6a84.css.map",
+    "main.d251a423.js.map": "/model-site/static/js/main.d251a423.js.map",
+    "453.aedec871.chunk.js.map": "/model-site/static/js/453.aedec871.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a71a6a84.css",
+    "static/js/main.d251a423.js"
+  ]
+}
